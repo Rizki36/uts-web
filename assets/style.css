@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  color: rgb(32, 32, 32);
+}
+
+body {
+  background: #dde5f4;
+}
+
+.body-login {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen-1 {
+  background: #f1f7fe;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0 0 2em #e6e9f9;
+  gap: 2em;
+}
+
+.screen-1 .logo {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  aspect-ratio: 1/1;
+  height: 130px;
+}
+
+.screen-1 .email {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+  margin-top: -3em;
+}
+
+.screen-1 .email input {
+  outline: none;
+  border: none;
+}
+
+.screen-1 .email input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .email ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+  background: white;
+  box-shadow: 0 0 2em #e6e9f9;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border-radius: 20px;
+  color: #4d4d4d;
+}
+
+.screen-1 .password input {
+  outline: none;
+  border: none;
+}
+
+.dark-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 1s;
+}
+
+.dark-hover:hover::before {
+  background-color: rgba(31, 31, 31, 0.4);
+}
+
+.screen-1 .password input::-moz-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password input::placeholder {
+  color: black;
+  font-size: 0.9em;
+}
+
+.screen-1 .password ion-icon {
+  color: #4d4d4d;
+  margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+  margin-right: -5em;
+}
+
+.screen-1 .login {
+  padding: 1em;
+  background: #3e4684;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.screen-1 .footer {
+  display: flex;
+  font-size: 0.7em;
+  color: #5e5e5e;
+  gap: 14em;
+  padding-bottom: 10em;
+}
+
+.screen-1 .footer span {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {}
+
+.header-logo {
+  aspect-ratio: 1/1;
+  width: 50px;
+  margin-right: 20px;
+}
+
+.header-menu {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 10px;
+  padding: 10px;
+}
+
+footer {
+  padding: 15px;
+}
+
+
+.form-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* CSS */
+.btn {
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn.btn-primary {
+  color: #FFFFFF;
+  background: #367AF6;
+}
+
+.btn.btn-danger {
+  color: #FFFFFF;
+  background-color: #EA4C89;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
+  background-color: #F082AC;
+}
+
+.label-radio input {
+  margin-right: 5px;
+}
+
+.img-container {
+  box-sizing: border-box;
+  border-radius: 20px;
+  height: 75vh;
+  background-blend-mode: lighten;
+  background-image: url('./bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 80%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+
+.img-title {
+  margin-bottom: 0px;
+}
+
+.img-description {
+  color: #fff;
+  width: 100%;
+}
+
+.welcome {
+  min-height: 80vh;
+  padding: 3rem;
+}
+
+.container-list {
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  gap: 30px;
+}
